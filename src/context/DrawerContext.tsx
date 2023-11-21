@@ -12,7 +12,7 @@ interface IDrawerProviderProps{
 }
 
 interface IDrawerOption{
-  icon: string,
+  icon: any,
   label:string,
   path: string
 }

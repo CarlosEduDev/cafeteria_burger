@@ -1,7 +1,10 @@
 import { Box, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from "@mui/material";
-import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
 
 import { useMatch, useNavigate, useResolvedPath } from "react-router-dom";
+
 import { useAppThemeContext, useDrawerContext } from "../../context";
 
 
@@ -54,7 +57,7 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({children}) =>{
 
 <Box width={theme.spacing(28)} height='100%' display='flex' flexDirection='column'>
   <Box width='100%' height={theme.spacing(20)} display='flex' alignItems='center' justifyContent='center'>
-    <RestaurantMenuIcon sx={{height: theme.spacing(12), width: theme.spacing(12)}}/>
+    <FastfoodIcon sx={{height: theme.spacing(12), width: theme.spacing(12)}}/>
   </Box>
   <Divider/>
 
@@ -72,11 +75,12 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({children}) =>{
     </List>
   </Box>
 
+  <Divider/>
   <Box>
     <List component='nav'>
       <ListItemButton onClick={toggleTheme}>
         <ListItemIcon>
-          <Icon>bedTime</Icon>
+          <BedtimeIcon/>
         </ListItemIcon>
 
         <ListItemText primary='Alternar tema'/>
