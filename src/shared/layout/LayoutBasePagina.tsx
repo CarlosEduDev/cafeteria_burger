@@ -6,7 +6,7 @@ import { useDrawerContext } from "../../context"
 
 interface ILayoutBasePaginaProps {
   children: React.ReactNode;
-  titulo: string
+  titulo: string;
 }
 
 export const LayoutBasePagina: React.FC<ILayoutBasePaginaProps> = ({children, titulo}) => {
@@ -33,6 +33,7 @@ variant={smDown ? 'h5' : mdDown ? 'h4' : 'h3'}
 overflow='hidden'
 whiteSpace='nowrap'
 textOverflow='ellipsis'
+margin={3}
 >
 {titulo}
 </Typography>
