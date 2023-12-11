@@ -4,6 +4,8 @@ import LunchDiningIcon from "@mui/icons-material/LunchDining";
 import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
 import WineBarIcon from "@mui/icons-material/WineBar";
 
+
+
 import { LayoutBasePagina } from "../layout";
 
 export const Home: React.FC = () => {
@@ -22,7 +24,7 @@ export const Home: React.FC = () => {
       <Box width="100%" display="flex">
          
          <Grid container spacing={3} padding={0.1}>
-          <Grid item xs={12} sm={5.4} md={3.7} lg={3} xl={3}>
+          <Grid item xs={12} sm={5.4} md={3.7} lg={3} xl={3} marginLeft={.1}>
             <Card>
               <CardContent>
                 <Typography variant="h2" align="center">
